@@ -1,8 +1,26 @@
 * {
     margin: 0;
-    /*box-sizing informs the browser how to calculate page width*/
-    /*border-box: width and height properties (and min/max properties) include...*/
-    /*content-box: the width and height properties (and min/max properties) include...*/
+    /* box-sizing informs the browser how to calculate page width */
+    /* border-box: width and height properties (and min/max properties) include... */
+    /* content-box: the width and height properties (and min/max properties) include... */
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* set element minimum height to 100% viewport height */
+    /* adopts height to viewport */
+    min-height: 100vh;
+    color: rgb(227, 67, 67);
+    background-color: #374151;
+}
+
+header {
+    /* the rem unit means "the root element's font-size" */
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
