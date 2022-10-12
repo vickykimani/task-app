@@ -24,3 +24,12 @@ header {
     width: 100%;
     margin: 0 auto;
 }
+
+.task_list_main {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    text-align: center;
+}
