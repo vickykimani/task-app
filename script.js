@@ -31,11 +31,13 @@ window.addEventListener('load', () => {
         task_edit_el.innerText = 'Edit';
 
         const task_del_el = document.createElement('button')
-        task_edit_el.classList.add('delete');
-        task_edit_el.innerText = 'Delete';
+        task_del_el.classList.add('delete');
+        task_del_el.innerText = 'Delete';
 
         task_action_el.appendChild(task_edit_el);
         task_action_el.appendChild(task_del_el);
+
+        task_el.appendChild(task_action_el);
 
         input.value = ''; //resetting the input form to empty
 
@@ -52,7 +54,7 @@ window.addEventListener('load', () => {
             }
         });
         task_del_el.addEventListener('click', (e) => {
-            list_el.removeChild('task_el');
+            list_el.removeChild(task_el);
         });
     });
 });
