@@ -7,6 +7,10 @@ window.addEventListener('load', () => {
         e.preventDefault(); //prevents default behaviour which is reloading the page
 
         const task = input.value;
+        if (task === undefined || task === "" || task?.trim() === "") {
+            alert("Please add a valid task.");
+            ({ id: id++, task: task, checked: false });
+        }
         const task_el = document.createElement('div');
         task_el.classList.add('task');
 
