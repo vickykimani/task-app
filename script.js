@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
         e.preventDefault(); //prevents default behaviour which is reloading the page
 
         const task = input.value;
-        if (task === undefined || task === "" || task?.trim() === "") {
+        if (task === undefined || task === "" || task?.trim() === "") { //prevent user from adding empty tasks
             alert("Please add a valid task.");
             ({ id: id++, task: task, checked: false });
         }
