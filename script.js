@@ -7,10 +7,31 @@ window.addEventListener('load', () => {
         e.preventDefault(); //prevents default behaviour which is reloading the page
 
         const task = input.value;
+        // task = [];
+        var idCount = 1;
         if (task === undefined || task === "" || task?.trim() === "") { //prevent user from adding empty tasks
             alert("Please add a valid task.");
             ({ id: id++, task: task, checked: false });
         }
+        // var li = document.createElement("li");
+        // //add checkbox
+        // var cbox = document.createElement('input');
+        // cbox.setAttribute('type', 'checkbox');
+        // cbox.addEventListener('change' taskAmount);
+        // li.appendChild(cbox);
+        // cbox.setAttribute('id', 'box' + idCount);
+        // idCount++;
+
+        // function taskAmount() {
+        //     var totalTasks = task.length;
+        //     var checkedTasks = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+        //     console.log(totalTasks);
+        //     console.log(checkedTasks);
+        // }
+
+
+
         const task_el = document.createElement('div');
         task_el.classList.add('task');
 
