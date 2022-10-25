@@ -30,7 +30,15 @@ window.addEventListener('load', () => {
         //     console.log(checkedTasks);
         // }
 
-
+        // var startList = '<ol>';
+        // var endList = '</ol>';
+        // window.onload = function orderNumbers() {
+        //     for (n = 1; n < 10; n++) {
+        //         var currentNumber = +1;
+        //         $('.orderNumbers : eq(' + (currentNumber - 1) + ')').html = currentNumber + '.';
+        //     };
+        //     document.getElementById("emptydiv").innerHTML = startList + endList;
+        // };
 
         const task_el = document.createElement('div');
         task_el.classList.add('task');
@@ -83,3 +91,4 @@ window.addEventListener('load', () => {
         });
     });
 });
+
