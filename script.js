@@ -72,6 +72,11 @@ window.addEventListener('load', () => {
 
         task_el.appendChild(task_action_el);
 
+        const task_z = document.getElementById("new-task-input");
+        const value2 = task_z.value.trim();
+        const ol = list_el.querySelector('ol');
+        const li = document.createElement('li');
+
         input.value = ''; //resetting the input form to empty
 
         list_el.appendChild(task_el);
